@@ -6,11 +6,11 @@
       <h1 class="title">{{anime.title}}</h1>
       <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
       <p class="summary"><b>Summary</b>: {{anime.summary}}</p>
-      <p class="review"><b>Review</b>: {{anime.review}}</p>      
+      <p class="review"><b>Review</b>: {{anime.review}}</p>
       <button class="button is-text" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
       <button class="button is-text" @click="muteToggle"><icon name="volume-off" scale="1.5"></icon></button>
     </div>
-  </swiper-slide>    
+  </swiper-slide>
 </template>
 
 <script>
@@ -38,10 +38,10 @@ export default {
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${this.anime.youtubeId}?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
       `,
         buttons: [
-          { 
+          {
             title: 'Close'
           }
-      ]
+        ]
       })
     }
   },
