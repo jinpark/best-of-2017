@@ -1,16 +1,18 @@
 [
     {
-        "title": "In This Corner of the World",
+        "title": "In This Corner of the World (Film)",
         "japaneseTitle": "この世界の片隅に",
         "videoUrl": "/static/inthiscorneroftheworld.mp4",
         "summary": "Set in Hiroshima during World War II, an eighteen-year-old girl gets married and now has to prepare food for her family despite the rationing and lack of supplies. As she struggles with the daily loss of life's amenities she still has to maintain the will to live.",
+        "review": "A slice of life story set during WW2 in Japan. Not as soul crushing as 'Grave of the Fireflies' but bring tissues.",
         "youtubeId": "-jBe-uHhlNs"
     },
     {
-        "title": "A Silent Voice",
+        "title": "A Silent Voice (Film)",
         "japaneseTitle": "聲の形",        
         "videoUrl": "/static/asilentvoice.mp4",
         "summary": "A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.",
+        "review": "Everyone has regrets and everyone deals with the differently. What's the right way to deal with something you hate yourself over?",
         "youtubeId": "nfK6UgLra7g"
     },
     {
@@ -18,27 +20,31 @@
         "japaneseTitle": "メイドインアビス",        
         "videoUrl": "/static/madeinabyss.mp4",
         "summary": "A young girl finds and befriends a humanoid robot and descends with him into the titular Abyss in search of her mother.",
-        "youtubeId": "vcuCPFddeF8"
+        "review": "Amazing world building, great music, awesome visuals. It was super easy to pick this one.",
+        "youtubeId": "Qr1AShguDPA"
     },
     {
         "title": "Miss Kobayashi's Dragon Maid ",
         "japaneseTitle": "小林さんちのメイドラゴン",        
         "videoUrl": "/static/maiddragon.mp4",
         "summary": "An office worker employs a kindhearted dragon to serve as her maid, and enters a world of comic misadventures.",
-        "youtubeId": "8JME_Pa8rgY"
+        "review": "Fun, stupid and silly while also sneaking in a few jabs at Japanese society. It makes you feel good when you watch it.",
+        "youtubeId": "0FYgFYpRVck"
     },
     {
-        "title": "Aho Girl",
-        "japaneseTitle": "アホガール",        
-        "videoUrl": "/static/ahogirl.mp4",
-        "summary": "The adventures of an idiot girl and her long-suffering friends.",
-        "youtubeId": "Auh5pgYXa5c"
+        "title": "Land of the Lustrous",
+        "japaneseTitle": "宝石の国",        
+        "videoUrl": "/static/houseki.mp4",
+        "summary": "In the distant future, a new immortal and genderless life form called Gems populate the Earth. The 28 Gems must fight against the Moon Dwellers, who attack them regularly to abduct them and to turn them into decorations.",
+        "review": "I always get surprised during every episode. The 3d animation is superb and mixing it with the handdrawn backgrounds makes it even more striking.",
+        "youtubeId": "oBmQfAoxBeM"
     },
     {
         "title": "Kemono Friends",
         "japaneseTitle": "けものフレンズ",        
         "videoUrl": "/static/kemonofriends.mp4",
-        "summary": "In the large animal park named Japari Park, animals have lived in the shape of human girls by the power of mysterious substances called Sandstar. However, Japari Park has started to dilapidate from time unknown. One day, a human child of amnesia gets lost in Japari Park. The child goes on a journey to find the child's way home with the help of animal girls, and they learn why Japari Park was dilapidated during their journey.",
+        "summary": "In the large animal park named Japari Park, animals have lived in the shape of human girls by the power of mysterious substances called Sandstar. However, Japari Park has started to dilapidate from time unknown. One day, a human child of amnesia gets lost in Japari Park.",
+        "review": "Kemono Friends is amazing and the backstory of how the anime was made was amazing. Go google it.",
         "youtubeId": "kzP4bAv9QXU"
     },
     {
@@ -46,6 +52,7 @@
         "japaneseTitle": "傷物語",        
         "videoUrl": "/static/kizumonogatari.mp4",
         "summary": "Follows Araragi's encounter with the vampire Kiss-shot Acerola-orion Heart-under-blade and his journey back into humanity from being a vampire.",
+        "review": "The Monogatari series has one of the strongest visual style out of all modern anime and with a movie budget, they went hard.",
         "youtubeId": "LYPJoA9udJo"
     },
     {
@@ -53,6 +60,7 @@
         "japaneseTitle": "昭和元禄落語心中",        
         "videoUrl": "/static/rakugo.mp4",
         "summary": "Yotarou is a former yakuza member fresh out of prison and fixated on just one thing: rather than return to a life of crime, the young man aspires to take to the stage of Rakugo, a traditional Japanese form of comedic storytelling.",
+        "review": "The first season came out in 2016 but this is one of my favorite shows of all time. This show leans heavily on death and loss and how we deal with it.",
         "youtubeId": "rMWOuwFpF-g"
     }
 ]

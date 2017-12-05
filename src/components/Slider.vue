@@ -36,6 +36,7 @@ export default {
       }
       if (previousSlide.getElementsByTagName('video').length > 0) {
         previousSlide.getElementsByTagName('video')[0].pause()
+        previousSlide.getElementsByTagName('video')[0].muted = true
       }
     })
   },
@@ -46,7 +47,9 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets'
-        }
+        },
+        mousewheel: true,
+        keyboard: true
       },
       animes: animes
     }

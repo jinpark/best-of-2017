@@ -15,7 +15,10 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "buefy": "^0.6.1",
+    "bulma": "^0.6.1",
     "vue": "^2.5.2",
+    "vue-awesome": "^2.3.4",
     "vue-awesome-swiper": "^3.0.4",
     "vue-canvasvideo": "^1.0.0",
     "vue-fullpage": "^2.0.5",

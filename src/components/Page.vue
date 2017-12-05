@@ -5,8 +5,10 @@
     <div class="video-info">
       <h1 class="title">{{anime.title}}</h1>
       <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
-      <p class="summary">{{anime.summary}}</p>
-      <button class="modal" @click="show">Youtube</button>
+      <p class="summary"><b>Summary</b>: {{anime.summary}}</p>
+      <p class="review"><b>Review</b>: {{anime.review}}</p>      
+      <button class="button is-text" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
+      <button class="button is-text" @click="muteToggle"><icon name="volume-off" scale="1.5"></icon></button>
     </div>
   </swiper-slide>    
 </template>
@@ -16,8 +18,21 @@
 export default {
   name: 'Page',
   props: ['anime'],
+  computed: {
+    video () {
+      return this.$el.getElementsByTagName('video')[0]
+    }
+  },
   methods: {
+    muteToggle () {
+      if (this.video.muted) {
+        this.video.muted = false
+      } else {
+        this.video.muted = true
+      }
+    },
     show () {
+      this.video.muted = true
       this.$modal.show('dialog', {
         text: `
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${this.anime.youtubeId}?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -32,9 +47,6 @@ export default {
   },
   data () {
     return {
-      iframe: `
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${this.anime.youtubeId}?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      `
     }
   }
 }
@@ -56,6 +68,10 @@ li {
 }
 a {
   color: #42b983;
+}
+
+button {
+  color: white !important;
 }
 
 video.bg-video {
@@ -89,9 +105,19 @@ video.bg-video {
 
 .title {
   margin-bottom: 0.1em;
+  color: #ffffff;
 }
 
 .japanese-title {
   margin: 0;
+}
+
+p.summary {
+  padding-bottom: 0.5em;
+}
+
+p.review {
+  padding-top: 0.5em;
+  border-top: 1px solid white;
 }
 </style>
