@@ -2,7 +2,7 @@
     {
         "title": "In This Corner of the World (Film)",
         "japaneseTitle": "この世界の片隅に",
-        "videoUrl": "/static/inthiscorneroftheworld.mp4",
+        "filename": "inthiscorneroftheworld",
         "summary": "Set in Hiroshima during World War II, an eighteen-year-old girl gets married and now has to prepare food for her family despite the rationing and lack of supplies. As she struggles with the daily loss of life's amenities she still has to maintain the will to live.",
         "review": "A slice of life story set during WW2 in Japan. Not as soul crushing as 'Grave of the Fireflies' but bring tissues.",
         "youtubeId": "-jBe-uHhlNs"
@@ -10,7 +10,7 @@
     {
         "title": "A Silent Voice (Film)",
         "japaneseTitle": "聲の形",
-        "videoUrl": "/static/asilentvoice.mp4",
+        "filename": "asilentvoice",
         "summary": "A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.",
         "review": "Everyone has regrets and everyone deals with them differently. What's the right way to redeem yourself?",
         "youtubeId": "nfK6UgLra7g"
@@ -18,7 +18,7 @@
     {
         "title": "Made in Abyss",
         "japaneseTitle": "メイドインアビス",
-        "videoUrl": "/static/madeinabyss.mp4",
+        "filename": "madeinabyss",
         "summary": "A young girl finds and befriends a humanoid robot and descends with him into the titular Abyss in search of her mother.",
         "review": "Amazing world building, great music, awesome visuals. It was super easy to pick this one.",
         "youtubeId": "Qr1AShguDPA"
@@ -26,7 +26,7 @@
     {
         "title": "Miss Kobayashi's Dragon Maid ",
         "japaneseTitle": "小林さんちのメイドラゴン",
-        "videoUrl": "/static/maiddragon.mp4",
+        "filename": "maiddragon",
         "summary": "An office worker employs a kindhearted dragon to serve as her maid, and enters a world of comic misadventures.",
         "review": "Fun, stupid and silly while sneaking in a few jabs at Japanese society. 100% feel good show.",
         "youtubeId": "0FYgFYpRVck"
@@ -34,7 +34,7 @@
     {
         "title": "Land of the Lustrous",
         "japaneseTitle": "宝石の国",
-        "videoUrl": "/static/houseki.mp4",
+        "filename": "houseki",
         "summary": "In the distant future, a new immortal and genderless life form called Gems populate the Earth. The 28 Gems must fight against the Moon Dwellers, who attack them regularly to abduct them and to turn them into decorations.",
         "review": "Every episode surprises me in some way. The 3D animation is superb and mixing it with the handdrawn backgrounds makes it even more striking.",
         "youtubeId": "oBmQfAoxBeM"
@@ -42,7 +42,7 @@
     {
         "title": "Kemono Friends",
         "japaneseTitle": "けものフレンズ",
-        "videoUrl": "/static/kemonofriends.mp4",
+        "filename": "kemonofriends",
         "summary": "In the large animal park named Japari Park, animals have lived in the shape of human girls by the power of mysterious substances called Sandstar. However, Japari Park has started to dilapidate from time unknown. One day, a human child of amnesia gets lost in Japari Park.",
         "review": "Kemono Friends is amazing and the backstory of how the anime was made was amazing. Go google it.",
         "youtubeId": "kzP4bAv9QXU"
@@ -50,7 +50,7 @@
     {
         "title": "Kizumonogatari",
         "japaneseTitle": "傷物語",
-        "videoUrl": "/static/kizumonogatari.mp4",
+        "filename": "kizumonogatari",
         "summary": "Follows Araragi's encounter with the vampire Kiss-shot Acerola-orion Heart-under-blade and his journey back into humanity from being a vampire.",
         "review": "The Monogatari series has one of the strongest visual style out of all modern anime and with a movie budget, they went all in.",
         "youtubeId": "LYPJoA9udJo"
@@ -58,7 +58,7 @@
     {
         "title": "Shouwa Genroku Rakugo Shinjuu",
         "japaneseTitle": "昭和元禄落語心中",
-        "videoUrl": "/static/rakugo.mp4",
+        "filename": "rakugo",
         "summary": "Yotarou is a former yakuza member fresh out of prison and fixated on just one thing: rather than return to a life of crime, the young man aspires to take to the stage of Rakugo, a traditional Japanese form of comedic storytelling.",
         "review": "The first season came out in 2016 but this is one of my favorite shows of all time. This show leans heavily on death and loss.",
         "youtubeId": "rMWOuwFpF-g"

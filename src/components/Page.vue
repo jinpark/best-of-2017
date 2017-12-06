@@ -1,7 +1,7 @@
 <template>
   <swiper-slide>
     <div class="overlay"></div>
-    <video class="bg-video" :src="anime.videoUrl" preload muted loop></video>
+    <video class="bg-video" :src="videoUrl" :poster="posterUrl" preload muted loop></video>
     <div class="video-info">
       <h1 class="title">{{anime.title}}</h1>
       <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
@@ -21,6 +21,12 @@ export default {
   computed: {
     video () {
       return this.$el.getElementsByTagName('video')[0]
+    },
+    videoUrl () {
+      return `/static/${this.anime.filename}.mp4`
+    },
+    posterUrl () {
+      return `/static/${this.anime.filename}.jpg`
     }
   },
   methods: {
