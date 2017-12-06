@@ -2,7 +2,7 @@
   <swiper-slide>
     <div class="end">
       <div class="overlay"></div>
-      <video class="bg-video" src="/static/intro.mp4" poster="/static/intro.png" autoplay muted loop></video>
+      <video class="bg-video" src="/static/ending.mp4" autoplay muted loop></video>
       <div class="video-info">
         <h1 class="title">Honorable Mentions</h1>
         <p>Shows I liked but didn't make it on the list</p>
@@ -95,18 +95,18 @@ ul {
 }
 
 li.cute::before {
-  content: "🐰"; 
+  content: "🐰 ";
 }
 
 li.action::before {
-  content: "💥"; 
+  content: "💥 ";
 }
 
 li.drama::before {
-  content: "🎭"; 
+  content: "🎭 ";
 }
 
 li.comedy::before {
-  content: "😂"; 
+  content: "😂 ";
 }
 </style>

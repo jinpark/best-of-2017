@@ -1,9 +1,11 @@
 <template>
   <swiper-slide>
     <div class="about">
+      <div class="overlay"></div>
+      <video class="bg-video" src="/static/intro.mp4" autoplay muted loop></video>
       <div class="video-info">
         <h1 class="title">Thank You!</h1>
-        <p>This was a small fun project to share anime that I love and for me to get more familiar with Vue.js</p>
+        <p>This was a small fun project to share anime that I love and get more familiar with Vue.js</p>
         <p>If you are looking for a freelance developer, please contact me at <a href="mail:jin@jinpark.net">jin@jinpark.net</a></p>
       </div>
     </div>
@@ -77,18 +79,18 @@ ul {
 }
 
 li.cute::before {
-  content: "🐰"; 
+  content: "🐰";
 }
 
 li.action::before {
-  content: "💥"; 
+  content: "💥";
 }
 
 li.drama::before {
-  content: "🎭"; 
+  content: "🎭";
 }
 
 li.comedy::before {
-  content: "😂"; 
+  content: "😂";
 }
 </style>
