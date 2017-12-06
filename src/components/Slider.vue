@@ -6,6 +6,7 @@
       <Intro></Intro>
       <Page v-for="anime in animes" :key="anime.title" v-bind:anime="anime"></Page>
       <End></End>
+      <About></About>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
@@ -16,6 +17,7 @@
 import Intro from './Intro.vue'
 import Page from './Page.vue'
 import End from './End.vue'
+import About from './About.vue'
 import animes from '../assets/animes.json'
 
 export default {
@@ -23,7 +25,8 @@ export default {
   components: {
     Page,
     Intro,
-    End
+    End,
+    About
   },
   computed: {
     swiper () {

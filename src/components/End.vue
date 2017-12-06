@@ -6,23 +6,22 @@
       <div class="video-info">
         <h1 class="title">Honorable Mentions</h1>
         <p>Shows I liked but didn't make it on the list</p>
-        <p>⚫ - Drama | 🔵 - Comedy | 🔴 - Action | ⚪ - Cute </p>
         <ul>
-          <li>3-Gatsu No Lion ⚫ </li>
-          <li>Aho Girl 🔵 </li>
-          <li>Ballroom e Youkoso ⚫ </li>
-          <li>Boku no Hero Academia S2 🔴 </li>
-          <li>Boruto 🔴 </li>
-          <li>Demi-chan wa Kataritai ⚪ </li>
-          <li>Gintama 🔵 </li>
-          <li>Isekai Shokudou ⚪ </li>
-          <li>Little Witch Academia ⚪ </li>
-          <li>New Game!! ⚪ </li>
-          <li>Owarimonogatari ⚫ </li>
-          <li>Shingeki no Kyojin S2 🔴 </li>
-          <li>Shokugeki no Souma: San no Sara 🔴 </li>
-          <li>Shoujo Shuumatsu Ryokou ⚪ </li>
-          <li>Yowamushi Pedal: NEW GENERATION ⚫ </li>
+          <li class="drama">3-Gatsu No Lion</li>
+          <li class="comedy">Aho Girl</li>
+          <li class="drama">Ballroom e Youkoso</li>
+          <li class="action">Boku no Hero Academia S2</li>
+          <li class="action">Boruto</li>
+          <li class="cute">Demi-chan wa Kataritai</li>
+          <li class="comedy">Gintama</li>
+          <li class="cute">Isekai Shokudou</li>
+          <li class="cute">Little Witch Academia</li>
+          <li class="cute">New Game!!</li>
+          <li class="drama">Owarimonogatari</li>
+          <li class="action">Shingeki no Kyojin S2</li>
+          <li class="action">Shokugeki no Souma: San no Sara</li>
+          <li class="cute">Shoujo Shuumatsu Ryokou</li>
+          <li class="drama">Yowamushi Pedal: NEW GENERATION</li>
         </ul>
       </div>
     </div>
@@ -85,5 +84,29 @@ video.bg-video {
 
 .title {
   color: #fff;
+  margin-bottom: 0.2em;
+}
+
+ul {
+  columns: auto 2;
+  text-align: left;
+  margin: auto;
+  max-width: 85%;
+}
+
+li.cute::before {
+  content: "🐰"; 
+}
+
+li.action::before {
+  content: "💥"; 
+}
+
+li.drama::before {
+  content: "🎭"; 
+}
+
+li.comedy::before {
+  content: "😂"; 
 }
 </style>

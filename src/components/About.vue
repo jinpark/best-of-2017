@@ -1,13 +1,10 @@
 <template>
   <swiper-slide>
-    <div class="intro">
-      <div class="overlay"></div>
-      <video class="bg-video" src="/static/intro.mp4" poster="/static/intro.png" autoplay muted loop></video>
+    <div class="about">
       <div class="video-info">
-        <h1 class="title">Favorite Anime of 2017</h1>
-        <p class="landscape">For mobile devices, please view in landscape and fullscreen for the best experience</p>
-        <p class="author">By <a href="https://jinpark.net" target="_blank">Jin Park</a></p>
-        <button class="button is-text" @click="toggle"><icon name="arrows-alt" scale="1.5"></icon></button>
+        <h1 class="title">Thank You!</h1>
+        <p>This was a small fun project to share anime that I love and for me to get more familiar with Vue.js</p>
+        <p>If you are looking for a freelance developer, please contact me at <a href="mail:jin@jinpark.net">jin@jinpark.net</a></p>
       </div>
     </div>
   </swiper-slide>
@@ -15,18 +12,7 @@
 
 <script>
 export default {
-  name: 'Intro',
-  methods: {
-    toggle () {
-      this.$fullscreen.toggle(this.$parent.$el, {
-        wrap: false,
-        callback: this.fullscreenChange
-      })
-    },
-    fullscreenChange (fullscreen) {
-      this.fullscreen = fullscreen
-    }
-  },
+  name: 'About',
   data () {
     return {
     }
@@ -67,6 +53,8 @@ video.bg-video {
 
 .video-info {
   width: 85vw;
+  max-height: 90vh;
+  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,10 +66,29 @@ video.bg-video {
 
 .title {
   color: #fff;
+  margin-bottom: 0.2em;
 }
 
-button.is-text {
-  float: right;
-  color: #fff;
+ul {
+  columns: auto 2;
+  text-align: left;
+  margin: auto;
+  max-width: 85%;
+}
+
+li.cute::before {
+  content: "🐰"; 
+}
+
+li.action::before {
+  content: "💥"; 
+}
+
+li.drama::before {
+  content: "🎭"; 
+}
+
+li.comedy::before {
+  content: "😂"; 
 }
 </style>
