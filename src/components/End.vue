@@ -1,12 +1,29 @@
 <template>
   <swiper-slide>
-    <div class="intro">
+    <div class="end">
       <div class="overlay"></div>
       <video class="bg-video" src="/static/intro.mp4" poster="/static/intro.png" autoplay muted loop></video>
       <div class="video-info">
-        <h1 class="title">Favorite Anime of 2017</h1>
-        <p class="landscape">Please view in landscape mode for the best experience</p>
-        <p class="author">By <a href="https://jinpark.net">Jin Park</a></p>
+        <h1 class="title">Honorable Mentions</h1>
+        <p>Shows I liked but didn't make it on the list</p>
+        <p>⚫ - Drama | 🔵 - Comedy | 🔴 - Action | ⚪ - Cute </p>
+        <ul>
+          <li>3-Gatsu No Lion ⚫ </li>
+          <li>Aho Girl 🔵 </li>
+          <li>Ballroom e Youkoso ⚫ </li>
+          <li>Boku no Hero Academia S2 🔴 </li>
+          <li>Boruto 🔴 </li>
+          <li>Demi-chan wa Kataritai ⚪ </li>
+          <li>Gintama 🔵 </li>
+          <li>Isekai Shokudou ⚪ </li>
+          <li>Little Witch Academia ⚪ </li>
+          <li>New Game!! ⚪ </li>
+          <li>Owarimonogatari ⚫ </li>
+          <li>Shingeki no Kyojin S2 🔴 </li>
+          <li>Shokugeki no Souma: San no Sara 🔴 </li>
+          <li>Shoujo Shuumatsu Ryokou ⚪ </li>
+          <li>Yowamushi Pedal: NEW GENERATION ⚫ </li>
+        </ul>
       </div>
     </div>
   </swiper-slide>
@@ -14,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Intro',
+  name: 'End',
   data () {
     return {
     }
@@ -55,6 +72,8 @@ video.bg-video {
 
 .video-info {
   width: 85vw;
+  max-height: 90vh;
+  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;

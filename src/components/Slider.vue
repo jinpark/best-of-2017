@@ -5,6 +5,7 @@
       <!-- slides -->
       <Intro></Intro>
       <Page v-for="anime in animes" :key="anime.title" v-bind:anime="anime"></Page>
+      <End></End>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
@@ -14,13 +15,15 @@
 <script>
 import Intro from './Intro.vue'
 import Page from './Page.vue'
+import End from './End.vue'
 import animes from '../assets/animes.json'
 
 export default {
   name: 'Slider',
   components: {
     Page,
-    Intro
+    Intro,
+    End
   },
   computed: {
     swiper () {

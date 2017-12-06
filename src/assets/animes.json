@@ -9,15 +9,15 @@
     },
     {
         "title": "A Silent Voice (Film)",
-        "japaneseTitle": "聲の形",        
+        "japaneseTitle": "聲の形",
         "videoUrl": "/static/asilentvoice.mp4",
         "summary": "A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.",
-        "review": "Everyone has regrets and everyone deals with the differently. What's the right way to deal with something you hate yourself over?",
+        "review": "Everyone has regrets and everyone deals with them differently. What's the right way to redeem yourself?",
         "youtubeId": "nfK6UgLra7g"
     },
     {
         "title": "Made in Abyss",
-        "japaneseTitle": "メイドインアビス",        
+        "japaneseTitle": "メイドインアビス",
         "videoUrl": "/static/madeinabyss.mp4",
         "summary": "A young girl finds and befriends a humanoid robot and descends with him into the titular Abyss in search of her mother.",
         "review": "Amazing world building, great music, awesome visuals. It was super easy to pick this one.",
@@ -25,23 +25,23 @@
     },
     {
         "title": "Miss Kobayashi's Dragon Maid ",
-        "japaneseTitle": "小林さんちのメイドラゴン",        
+        "japaneseTitle": "小林さんちのメイドラゴン",
         "videoUrl": "/static/maiddragon.mp4",
         "summary": "An office worker employs a kindhearted dragon to serve as her maid, and enters a world of comic misadventures.",
-        "review": "Fun, stupid and silly while also sneaking in a few jabs at Japanese society. It makes you feel good when you watch it.",
+        "review": "Fun, stupid and silly while sneaking in a few jabs at Japanese society. 100% feel good show.",
         "youtubeId": "0FYgFYpRVck"
     },
     {
         "title": "Land of the Lustrous",
-        "japaneseTitle": "宝石の国",        
+        "japaneseTitle": "宝石の国",
         "videoUrl": "/static/houseki.mp4",
         "summary": "In the distant future, a new immortal and genderless life form called Gems populate the Earth. The 28 Gems must fight against the Moon Dwellers, who attack them regularly to abduct them and to turn them into decorations.",
-        "review": "I always get surprised during every episode. The 3d animation is superb and mixing it with the handdrawn backgrounds makes it even more striking.",
+        "review": "Every episode surprises me. The 3D animation is superb and mixing it with the handdrawn backgrounds makes it even more striking.",
         "youtubeId": "oBmQfAoxBeM"
     },
     {
         "title": "Kemono Friends",
-        "japaneseTitle": "けものフレンズ",        
+        "japaneseTitle": "けものフレンズ",
         "videoUrl": "/static/kemonofriends.mp4",
         "summary": "In the large animal park named Japari Park, animals have lived in the shape of human girls by the power of mysterious substances called Sandstar. However, Japari Park has started to dilapidate from time unknown. One day, a human child of amnesia gets lost in Japari Park.",
         "review": "Kemono Friends is amazing and the backstory of how the anime was made was amazing. Go google it.",
@@ -49,18 +49,18 @@
     },
     {
         "title": "Kizumonogatari",
-        "japaneseTitle": "傷物語",        
+        "japaneseTitle": "傷物語",
         "videoUrl": "/static/kizumonogatari.mp4",
         "summary": "Follows Araragi's encounter with the vampire Kiss-shot Acerola-orion Heart-under-blade and his journey back into humanity from being a vampire.",
-        "review": "The Monogatari series has one of the strongest visual style out of all modern anime and with a movie budget, they went hard.",
+        "review": "The Monogatari series has one of the strongest visual style out of all modern anime and with a movie budget, they really went for it.",
         "youtubeId": "LYPJoA9udJo"
     },
     {
         "title": "Shouwa Genroku Rakugo Shinjuu",
-        "japaneseTitle": "昭和元禄落語心中",        
+        "japaneseTitle": "昭和元禄落語心中",
         "videoUrl": "/static/rakugo.mp4",
         "summary": "Yotarou is a former yakuza member fresh out of prison and fixated on just one thing: rather than return to a life of crime, the young man aspires to take to the stage of Rakugo, a traditional Japanese form of comedic storytelling.",
-        "review": "The first season came out in 2016 but this is one of my favorite shows of all time. This show leans heavily on death and loss and how we deal with it.",
+        "review": "The first season came out in 2016 but this is one of my favorite shows of all time. This show leans heavily on death and loss.",
         "youtubeId": "rMWOuwFpF-g"
     }
 ]

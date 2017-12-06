@@ -58,17 +58,6 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 
 button {
   color: white !important;
@@ -96,11 +85,14 @@ video.bg-video {
 }
 
 .video-info {
-  max-width: 80vw;
-  margin: 10vh auto auto auto;
+  width: 85vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  color: white;
+  color: #ffffff;
 }
 
 .title {
