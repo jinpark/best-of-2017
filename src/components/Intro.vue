@@ -7,7 +7,7 @@
         <h1 class="title">Favorite Anime of 2017</h1>
         <p class="landscape">For mobile devices, please view in landscape and fullscreen for the best experience</p>
         <p class="author">By <a href="https://jinpark.net" target="_blank">Jin Park</a></p>
-        <button class="button is-text" @click="toggle"><icon name="arrows-alt" scale="1.5"></icon></button>
+        <button class="button is-text" @click="toggle" v-show="!ios"><icon name="arrows-alt" scale="1.5"></icon></button>
       </div>
     </div>
   </swiper-slide>
@@ -25,6 +25,11 @@ export default {
     },
     fullscreenChange (fullscreen) {
       this.fullscreen = fullscreen
+    }
+  },
+  computed: {
+    ios () {
+      return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
     }
   },
   data () {

@@ -1,38 +1,46 @@
 <template>
   <swiper-slide>
-    <div class="end">
       <div class="overlay"></div>
       <video class="bg-video" src="/static/ending.mp4" autoplay muted loop></video>
-      <div class="video-info">
-        <h1 class="title">Honorable Mentions</h1>
-        <p>Shows I liked but didn't make it on the list</p>
-        <ul>
-          <li class="drama">3-Gatsu No Lion</li>
-          <li class="comedy">Aho Girl</li>
-          <li class="drama">Ballroom e Youkoso</li>
-          <li class="action">Boku no Hero Academia S2</li>
-          <li class="action">Boruto</li>
-          <li class="cute">Demi-chan wa Kataritai</li>
-          <li class="comedy">Gintama</li>
-          <li class="cute">Isekai Shokudou</li>
-          <li class="cute">Little Witch Academia</li>
-          <li class="cute">New Game!!</li>
-          <li class="drama">Owarimonogatari</li>
-          <li class="action">Shingeki no Kyojin S2</li>
-          <li class="action">Shokugeki no Souma: San no Sara</li>
-          <li class="cute">Shoujo Shuumatsu Ryokou</li>
-          <li class="drama">Yowamushi Pedal: NEW GENERATION</li>
-        </ul>
-      </div>
-    </div>
+      <swiper :options="swiperOption" ref="horizontalSwiper">
+        <!-- slides -->
+        <swiper-slide>
+          <div class="video-info">
+            <h1 class="title">Honorable Mentions</h1>
+            <h3 class="japanese-title">Almost on the list but not quite!</h3>
+            <h3>Swipe or scroll left to continue</h3>
+          </div>
+        </swiper-slide>
+        <Honorable v-for="anime in animes" :key="anime.title" v-bind:anime="anime"></Honorable>
+        <!-- Optional controls -->
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
   </swiper-slide>
 </template>
 
 <script>
+import Honorable from './Honorable.vue'
+import animes from '../assets/honorable.json'
+
 export default {
   name: 'End',
+  components: {
+    Honorable
+  },
   data () {
     return {
+      swiperOption: {
+        direction: 'horizontal',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        mousewheel: true,
+        keyboard: true,
+        autoplay: true
+      },
+      animes: animes
     }
   }
 }
@@ -108,5 +116,10 @@ li.drama::before {
 
 li.comedy::before {
   content: "😂 ";
+}
+
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
 }
 </style>
