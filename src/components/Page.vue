@@ -39,16 +39,7 @@ export default {
     },
     show () {
       this.video.muted = true
-      this.$modal.show('dialog', {
-        text: `
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${this.anime.youtubeId}?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      `,
-        buttons: [
-          {
-            title: 'Close'
-          }
-        ]
-      })
+      this.$modal.show('youtube', {youtubeId: this.anime.youtubeId})
     }
   },
   data () {

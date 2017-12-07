@@ -1,6 +1,8 @@
 <template>
   <div class="all">
-    <v-dialog />
+    <modal name="youtube" @before-open="beforeOpen" :adaptive=false width="80%" height="80%">
+      <YTEmbed :youtubeId="youtubeId"></YTEmbed>
+    </modal>
     <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
       <Intro></Intro>
@@ -16,6 +18,7 @@
 <script>
 import Intro from './Intro.vue'
 import Page from './Page.vue'
+import YTEmbed from './YTEmbed.vue'
 import End from './End.vue'
 import About from './About.vue'
 import animes from '../assets/animes.json'
@@ -24,9 +27,15 @@ export default {
   name: 'Slider',
   components: {
     Page,
+    YTEmbed,
     Intro,
     End,
     About
+  },
+  methods: {
+    beforeOpen (e) {
+      this.youtubeId = e.params.youtubeId
+    }
   },
   computed: {
     swiper () {
@@ -48,6 +57,7 @@ export default {
   },
   data () {
     return {
+      youtubeId: '',
       swiperOption: {
         direction: 'vertical',
         pagination: {
@@ -55,7 +65,8 @@ export default {
           type: 'bullets'
         },
         mousewheel: true,
-        keyboard: true
+        keyboard: true,
+        simulateTouch: false
       },
       animes: animes
     }
