@@ -37,8 +37,7 @@ export default {
           prevEl: '.swiper-button-prev'
         },
         mousewheel: true,
-        keyboard: true,
-        autoplay: true
+        keyboard: true
       },
       animes: animes
     }
