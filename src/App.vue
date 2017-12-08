@@ -20,7 +20,54 @@ export default {
   height: 100vh;
   width: 100vw;
 }
-h1, h2, h3 {
-  font-weight: normal;
+
+.title {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.overlay {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC);
+}
+
+.video-info {
+  width: 85vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #ffffff;
+}
+
+video.bg-video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.japanese-title {
+  margin: 0;
+}
+
+p.summary {
+  padding-bottom: 0.5em;
+}
+
+p.review {
+  padding-top: 0.5em;
+  border-top: 1px solid white;
 }
 </style>

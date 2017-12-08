@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import VideoBg from 'vue-videobg'
 import VModal from 'vue-js-modal'
 import 'vue-awesome/icons/'
 import Icon from 'vue-awesome/components/Icon'
@@ -16,7 +15,6 @@ import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
-Vue.component('video-bg', VideoBg)
 Vue.use(VModal, { dialog: true })
 Vue.component('icon', Icon)
 Vue.use(fullscreen)

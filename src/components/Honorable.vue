@@ -17,37 +17,14 @@ export default {
     posterUrl () {
       return `/static/honorable/${this.anime.filename}.jpg`
     }
-  },
-  methods: {
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
-}
-
-button {
-  color: white !important;
-}
-
-
-.overlay {
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
 }
 
 .video-info {
@@ -67,20 +44,11 @@ button {
 }
 
 .title {
-  margin-bottom: 0.1em;
+  margin-bottom: 0.1em !important;
   color: #ffffff;
 }
 
 .japanese-title {
   margin: 0;
-}
-
-p.summary {
-  padding-bottom: 0.5em;
-}
-
-p.review {
-  padding-top: 0.5em;
-  border-top: 1px solid white;
 }
 </style>

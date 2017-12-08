@@ -38,7 +38,7 @@ export default {
         },
         mousewheel: true,
         keyboard: true,
-        simulateTouch: false
+        loop: true
       },
       animes: animes
     }
@@ -54,6 +54,10 @@ h1, h2 {
 }
 a {
   color: #42b983;
+}
+
+.swiper-button-next {
+  right: 30px;
 }
 
 video.bg-video {
@@ -92,7 +96,7 @@ video.bg-video {
 
 .title {
   color: #fff;
-  margin-bottom: 0.2em;
+  margin-bottom: 0;
 }
 
 ul {
