@@ -2,7 +2,7 @@
   <swiper-slide>
     <div class="about">
       <div class="overlay"></div>
-      <video class="bg-video" src="/static/intro.mp4" autoplay muted loop></video>
+      <video class="bg-video" src="/static/intro.mp4" autoplay muted loop playsinline></video>
       <div class="video-info">
         <h1 class="title">Thank You!</h1>
         <p>This was a small fun project to share anime that I love and get more familiar with Vue.js</p>

@@ -2,7 +2,7 @@
   <swiper-slide>
     <div class="intro">
       <div class="overlay"></div>
-      <video class="bg-video" src="/static/intro.mp4" poster="/static/intro.png" autoplay muted loop></video>
+      <video class="bg-video" src="/static/intro.mp4" poster="/static/intro.png" autoplay muted loop playsinline></video>
       <div class="video-info">
         <h1 class="title">Favorite Anime of 2017</h1>
         <p class="landscape">For mobile devices, please view in landscape and fullscreen for the best experience</p>
@@ -19,21 +19,13 @@ export default {
   methods: {
     toggle () {
       this.$fullscreen.toggle(this.$parent.$el, {
-        wrap: false,
-        callback: this.fullscreenChange
+        wrap: false
       })
-    },
-    fullscreenChange (fullscreen) {
-      this.fullscreen = fullscreen
     }
   },
   computed: {
     ios () {
       return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
-    }
-  },
-  data () {
-    return {
     }
   }
 }
@@ -41,13 +33,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-h1, h2 {
-  font-weight: normal;
-}
-a {
+/* a {
   color: #42b983;
-}
+} */
 
 video.bg-video {
   position: absolute;

@@ -1,7 +1,7 @@
 <template>
   <swiper-slide>
     <div class="overlay"></div>
-    <video class="bg-video" :src="videoUrl" :poster="posterUrl" preload muted loop></video>
+    <video class="bg-video" :src="videoUrl" :poster="posterUrl" preload muted loop playsinline></video>
     <div class="video-info">
       <h1 class="title">{{anime.title}}</h1>
       <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
@@ -31,11 +31,7 @@ export default {
   },
   methods: {
     muteToggle () {
-      if (this.video.muted) {
-        this.video.muted = false
-      } else {
-        this.video.muted = true
-      }
+      this.video.muted = !this.video.muted
     },
     show () {
       this.video.muted = true
@@ -52,7 +48,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-h1, h2 {
+h1, h3 {
   font-weight: normal;
 }
 

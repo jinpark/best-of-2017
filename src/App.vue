@@ -20,4 +20,7 @@ export default {
   height: 100vh;
   width: 100vw;
 }
+h1, h2, h3 {
+  font-weight: normal;
+}
 </style>

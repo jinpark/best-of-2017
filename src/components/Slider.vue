@@ -44,6 +44,7 @@ export default {
   },
   mounted () {
     this.swiper.on('slideChange', () => {
+      // pause and play video on slide change
       var activeSlide = this.swiper.slides[this.swiper.activeIndex]
       var previousSlide = this.swiper.slides[this.swiper.previousIndex]
       if (activeSlide.getElementsByTagName('video').length > 0) {
@@ -76,20 +77,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 .swiper-container {
   width: 100vw;
   height: 100vh;

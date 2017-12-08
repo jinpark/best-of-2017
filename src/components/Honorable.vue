@@ -1,6 +1,5 @@
 <template>
   <swiper-slide>
-    <!-- <div class="overlay" :style="{ backgroundImage: `url(${posterUrl})` }"></div> -->
     <div class="video-info">
       <img :src="posterUrl">
       <h1 class="title">{{anime.title}}</h1>

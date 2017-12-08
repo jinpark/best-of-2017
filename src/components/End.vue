@@ -1,7 +1,7 @@
 <template>
   <swiper-slide>
       <div class="overlay"></div>
-      <video class="bg-video" src="/static/ending.mp4" autoplay muted loop></video>
+      <video class="bg-video" src="/static/ending.mp4" autoplay muted loop playsinline></video>
       <swiper :options="swiperOption" ref="horizontalSwiper">
         <!-- slides -->
         <swiper-slide>
