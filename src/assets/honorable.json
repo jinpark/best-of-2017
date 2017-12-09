@@ -3,84 +3,98 @@
         "title": "March Comes in like a Lion Season 2",
         "japaneseTitle": "3月のライオン",
         "genre": "drama",
-        "filename": "3gatsu"
+        "filename": "3gatsu",
+        "wiki": "https://en.wikipedia.org/wiki/March_Comes_in_like_a_Lion"
     },
     {
         "title": "Aho Girl",
         "japaneseTitle": "アホガール",
         "genre": "comedy",
-        "filename": "ahogirl"
+        "filename": "ahogirl",
+        "wiki": "https://en.wikipedia.org/wiki/Aho-Girl"
     },
     {
         "title": "Welcome to the Ballroom",
         "japaneseTitle": "ボールルームへようこそ",
         "genre": "drama",
-        "filename": "ballroom"
+        "filename": "ballroom",
+        "wiki": "https://en.wikipedia.org/wiki/Welcome_to_the_Ballroom"
     },
     {
         "title": "My Hero Academia Season 2",
         "japaneseTitle": "僕のヒーローアカデミア 2ndシーズン",
         "genre": "action",
-        "filename": "hero"
+        "filename": "hero",
+        "wiki": "https://en.wikipedia.org/wiki/My_Hero_Academia"
     },
     {
         "title": "Interviews With Monster Girls",
         "japaneseTitle": "亜人ちゃんは語りたい",
         "genre": "comedy",
-        "filename": "demichan"
+        "filename": "demichan",
+        "wiki": "https://en.wikipedia.org/wiki/Interviews_with_Monster_Girls"
     },
     {
         "title": "Gintama.: Slip Arc",
         "japaneseTitle": "銀魂。ポロリ編",
         "genre": "comedy",
-        "filename": "gintama"
+        "filename": "gintama",
+        "wiki": "https://en.wikipedia.org/wiki/Gin_Tama"
     },
     {
         "title": "Recovery of an MMO Junkie",
         "japaneseTitle": "ネト充のススメ",
         "genre": "drama",
-        "filename": "netojuu"
+        "filename": "netojuu",
+        "wiki": "https://en.wikipedia.org/wiki/Recovery_of_an_MMO_Junkie"
     },
     {
         "title": "Restaurant to Another World",
         "japaneseTitle": "異世界食堂",
         "genre": "cute",
-        "filename": "isekai"
+        "filename": "isekai",
+        "wiki": "https://en.wikipedia.org/wiki/Restaurant_to_Another_World"
     },
     {
         "title": "Little Witch Academia",
         "japaneseTitle": "リトルウィッチアカデミア",
         "genre": "cute",
-        "filename": "lwa"
+        "filename": "lwa",
+        "wiki": "https://en.wikipedia.org/wiki/Little_Witch_Academia"
     },
     {
         "title": "New Game!!",
         "japaneseTitle": "NEW GAME!!",
         "genre": "cute",
-        "filename": "newgame"
+        "filename": "newgame",
+        "wiki": "https://en.wikipedia.org/wiki/New_Game!"
     },
     {
         "title": "Owarimonogatari Second Season",
         "japaneseTitle": "終物語",
         "genre": "drama",
-        "filename": "owari"
+        "filename": "owari",
+        "wiki": "https://en.wikipedia.org/wiki/Monogatari_(series)"
     },
     {
         "title": "Attack on Titan Season 2",
         "japaneseTitle": "進撃の巨人 Season 2",
         "genre": "action",
-        "filename": "aot"
+        "filename": "aot",
+        "wiki": "https://en.wikipedia.org/wiki/Attack_on_Titan"
     },
     {
         "title": "Food Wars! The Third Plate",
         "japaneseTitle": "食戟のソーマ 餐ノ皿",
         "genre": "action",
-        "filename": "shokugeki"
+        "filename": "shokugeki",
+        "wiki": "https://en.wikipedia.org/wiki/Food_Wars!:_Shokugeki_no_Soma"
     },
     {
         "title": "Yowamushi Pedal: New Generation",
         "japaneseTitle": "弱虫ペダル NEW GENERATION",
         "genre": "action",
-        "filename": "yowamushi"
+        "filename": "yowamushi",
+        "wiki": "https://en.wikipedia.org/wiki/Yowamushi_Pedal"
     }
 ]

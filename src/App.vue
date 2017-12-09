@@ -22,7 +22,7 @@ export default {
 }
 
 .title {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   color: #ffffff;
 }
 
@@ -59,7 +59,7 @@ video.bg-video {
 }
 
 .japanese-title {
-  margin: 0;
+  margin: 0 !important;
 }
 
 p.summary {
