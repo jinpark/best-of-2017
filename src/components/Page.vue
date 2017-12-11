@@ -6,10 +6,12 @@
       <h1 class="title">{{anime.title}}</h1>
       <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
       <p class="summary"><b>Summary</b>: {{anime.summary}}</p>
-      <p class="review"><b>Review</b>: {{anime.review}}</p>
-      <button class="button is-text" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
-      <button class="button is-text" @click="muteToggle" v-if="!this.isMuted"><icon name="volume-up" scale="1.5"></icon></button>
-      <button class="button is-text" @click="muteToggle" v-if="this.isMuted"><icon name="volume-off" scale="1.5"></icon></button>      
+      <div class="info">
+        <p class="review"><b>Review</b>: {{anime.review}}</p>
+        <button class="button is-text" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
+        <button class="button is-text" @click="muteToggle" v-if="!this.isMuted"><icon name="volume-up" scale="1.5"></icon></button>
+        <button class="button is-text" @click="muteToggle" v-if="this.isMuted"><icon name="volume-off" scale="1.5"></icon></button>      
+      </div>
     </div>
   </swiper-slide>
 </template>

@@ -26,6 +26,7 @@
     "vue-fullscreen": "^2.1.3",
     "vue-js-modal": "^1.3.6",
     "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.9",
     "vue-videobg": "^2.0.0"
   },
   "devDependencies": {

@@ -2,9 +2,13 @@
   <swiper-slide>
     <div class="video-info">
       <img :src="posterUrl">
-      <a :href=anime.wiki target="_blank"><button class="button is-text"><icon name="wikipedia-w" scale="1.5"></icon></button></a>
+
       <h1 class="title">{{anime.title}}</h1>
-      <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
+      <div class="info">
+        <button class="button is-text hidden"><icon name="wikipedia-w" scale="1.5"></icon></button>
+        <h3 class="japanese-title">{{ anime.japaneseTitle }}</h3>
+        <a :href=anime.wiki target="_blank" class="wiki"><button class="button is-text"><icon name="wikipedia-w" scale="1.5"></icon></button></a>
+      </div>
     </div>
   </swiper-slide>
 </template>
@@ -29,16 +33,26 @@ h1, h2, h3 {
 }
 
 .video-info img {
-  max-height: 60vh;
-}
-
-.title {
-  margin-bottom: 0.1em !important;
-  color: #ffffff;
+  max-height: 50vh;
 }
 
 button.is-text {
   color: white;
   float: right;
 }
+
+.info {
+  justify-content: center;
+  align-items: center;
+}
+
+button.hidden {
+  visibility: hidden;
+  margin-left: auto;
+}
+
+a.wiki {
+  margin-left: auto;
+}
+
 </style>

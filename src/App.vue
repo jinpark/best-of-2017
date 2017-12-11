@@ -23,7 +23,7 @@ export default {
 
 .title {
   margin-bottom: 0 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .overlay {
@@ -64,10 +64,14 @@ video.bg-video {
 
 p.summary {
   padding-bottom: 0.5em;
+  border-bottom: 1px solid white;
 }
 
 p.review {
   padding-top: 0.5em;
-  border-top: 1px solid white;
+}
+
+.info {
+  display: flex;
 }
 </style>

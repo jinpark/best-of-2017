@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About.vue matches snapshot 1`] = `
+<swiper-slide>
+    <div class="about">
+        <div class="overlay"></div>
+        <video src="/static/intro.mp4" autoplay="autoplay" muted="muted" loop="loop" playsinline="" class="bg-video"></video>
+        <div class="video-info">
+            <h1 class="title">Thank You!</h1>
+            <p>This was a small fun project to share anime that I love and get more familiar with Vue.js</p>
+            <p>If you are looking for a freelance developer, please contact me at
+                <a href="mail:jin@jinpark.net">jin@jinpark.net</a>
+            </p>
+        </div>
+    </div>
+</swiper-slide>
+`;

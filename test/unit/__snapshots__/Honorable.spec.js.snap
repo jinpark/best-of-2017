@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Honorable.vue matches snapshot 1`] = `
+<swiper-slide>
+    <div class="video-info">
+        <img src="/static/honorable/ballroom.jpg">
+        <h1 class="title">Welcome to the Ballroom</h1>
+        <div class="info">
+            <button class="button is-text hidden">
+                <icon name="wikipedia-w" scale="1.5"></icon>
+            </button>
+            <h3 class="japanese-title">ボールルームへようこそ</h3>
+            <a href="https://en.wikipedia.org/wiki/Welcome_to_the_Ballroom" target="_blank" class="wiki">
+                <button class="button is-text">
+                    <icon name="wikipedia-w" scale="1.5"></icon>
+                </button>
+            </a>
+        </div>
+    </div>
+</swiper-slide>
+`;

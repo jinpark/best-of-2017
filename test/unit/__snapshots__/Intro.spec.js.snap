@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro.vue matches snapshot 1`] = `
+<swiper-slide>
+    <div class="intro">
+        <div class="overlay"></div>
+        <video src="/static/intro.mp4" poster="/static/intro.png" autoplay="autoplay" muted="muted" loop="loop" playsinline="" class="bg-video"></video>
+        <div class="video-info">
+            <h1 class="title">Favorite Anime of 2017</h1>
+            <p class="landscape">For mobile devices, please view in landscape and fullscreen for the best experience</p>
+            <p class="author">By
+                <a href="https://jinpark.net" target="_blank">Jin Park</a>
+            </p>
+            <button class="button is-text">
+                <icon name="arrows-alt" scale="1.5"></icon>
+            </button>
+        </div>
+    </div>
+</swiper-slide>
+`;
