@@ -8,7 +8,6 @@
     </modal>
     <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-
       <Page v-for="anime in animes" :key="anime.title" v-bind:anime="anime"></Page>
       <End></End>
       <About></About>
@@ -38,6 +37,13 @@ export default {
   methods: {
     beforeOpen (e) {
       this.youtubeId = e.params.youtubeId
+    },
+    enableScrollEvent (entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.99) {
+          entry.target.classList.add('pointer')
+        }
+      })
     }
   },
   computed: {
@@ -59,6 +65,11 @@ export default {
         previousSlide.getElementsByTagName('video')[0].muted = true
       }
     })
+    const observer = new IntersectionObserver(this.enableScrollEvent, {
+      root: null,
+      threshold: [0.99]
+    })
+    observer.observe(document.getElementsByClassName('swiper-container')[0])
   },
   data () {
     return {
@@ -84,9 +95,14 @@ export default {
 .swiper-container {
   width: 100vw;
   height: 100vh;
+  pointer-events: none;
 }
 .initial {
   width: 100vw;
   height: 100vh;
 }
+.pointer {
+  pointer-events: auto;
+}
+
 </style>
