@@ -10,7 +10,7 @@
         <p class="review"><b>Review</b>: {{anime.review}}</p>
         <button class="button is-text youtube" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
         <button class="button is-text mute" @click="muteToggle" v-if="!this.isMuted"><icon name="volume-up" scale="1.5"></icon></button>
-        <button class="button is-text unmute" @click="muteToggle" v-if="this.isMuted"><icon name="volume-off" scale="1.5"></icon></button>      
+        <button class="button is-text unmute" @click="muteToggle" v-if="this.isMuted"><icon name="volume-off" scale="1.5"></icon></button>
       </div>
     </div>
   </swiper-slide>
@@ -59,5 +59,10 @@ export default {
 <style scoped>
 button {
   color: white !important;
+}
+
+div.info {
+  justify-content: center;
+  align-items: center;
 }
 </style>

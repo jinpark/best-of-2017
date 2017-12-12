@@ -21,7 +21,7 @@ export default {
   width: 100vw;
 }
 
-.title {
+h1.title, .title {
   margin-bottom: 0 !important;
   color: #ffffff !important;
 }

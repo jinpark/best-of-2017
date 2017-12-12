@@ -10,8 +10,8 @@ import Icon from 'vue-awesome/components/Icon'
 import fullscreen from 'vue-fullscreen'
 import VueAnalytics from 'vue-analytics'
 
+import 'animate.css/animate.min.css'
 import 'bulma/css/bulma.css'
-import 'vue-canvasvideo/dist/vuecanvasvideo.min.css'
 import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false

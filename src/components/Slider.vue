@@ -1,11 +1,14 @@
 <template>
   <div class="all">
+    <div class="initial">
+      <Intro></Intro>
+    </div>
     <modal name="youtube" @before-open="beforeOpen" :adaptive=false width="80%" height="80%">
       <YTEmbed :youtubeId="youtubeId"></YTEmbed>
     </modal>
     <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <Intro></Intro>
+
       <Page v-for="anime in animes" :key="anime.title" v-bind:anime="anime"></Page>
       <End></End>
       <About></About>
@@ -79,6 +82,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+.initial {
   width: 100vw;
   height: 100vh;
 }
