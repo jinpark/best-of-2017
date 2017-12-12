@@ -19,6 +19,7 @@
     "bulma": "^0.6.1",
     "screenfull": "^3.3.2",
     "vue": "^2.5.2",
+    "vue-analytics": "^5.6.0",
     "vue-awesome": "^2.3.4",
     "vue-awesome-swiper": "^3.0.4",
     "vue-canvasvideo": "^1.0.0",

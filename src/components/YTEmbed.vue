@@ -11,15 +11,6 @@ export default {
     source () {
       return `https://www.youtube.com/embed/${this.youtubeId}?rel=0&amp;showinfo=0`
     }
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>

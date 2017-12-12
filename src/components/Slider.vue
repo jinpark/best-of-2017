@@ -44,6 +44,7 @@ export default {
   },
   mounted () {
     this.swiper.on('slideChange', () => {
+      this.$ga.event('slide', 'change', 'normal', this.swiper.activeIndex)
       // pause and play video on slide change
       var activeSlide = this.swiper.slides[this.swiper.activeIndex]
       var previousSlide = this.swiper.slides[this.swiper.previousIndex]

@@ -1,16 +1,16 @@
-import About from '@/components/About'
+import YTEmbed from '@/components/YTEmbed'
 import { shallow } from 'vue-test-utils'
 import { createRenderer } from 'vue-server-renderer'
 
-describe('About.vue', () => {
+describe('YTEmbed.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallow(About)
+    wrapper = shallow(YTEmbed, {propsData: {youtubeId: 'abcdef'}})
   })
 
-  it('is a swiper-slide', () => {
-    expect(wrapper.is('swiper-slide')).toBe(true)
+  it('is an iframe', () => {
+    expect(wrapper.is('iframe')).toBe(true)
   })
 
   it('matches snapshot', () => {

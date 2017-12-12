@@ -8,9 +8,9 @@
       <p class="summary"><b>Summary</b>: {{anime.summary}}</p>
       <div class="info">
         <p class="review"><b>Review</b>: {{anime.review}}</p>
-        <button class="button is-text" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
-        <button class="button is-text" @click="muteToggle" v-if="!this.isMuted"><icon name="volume-up" scale="1.5"></icon></button>
-        <button class="button is-text" @click="muteToggle" v-if="this.isMuted"><icon name="volume-off" scale="1.5"></icon></button>      
+        <button class="button is-text youtube" @click="show"><icon name="youtube-play" scale="1.5"></icon></button>
+        <button class="button is-text mute" @click="muteToggle" v-if="!this.isMuted"><icon name="volume-up" scale="1.5"></icon></button>
+        <button class="button is-text unmute" @click="muteToggle" v-if="this.isMuted"><icon name="volume-off" scale="1.5"></icon></button>      
       </div>
     </div>
   </swiper-slide>
@@ -35,6 +35,7 @@ export default {
   methods: {
     muteToggle () {
       this.isMuted = !this.isMuted
+      /* istanbul ignore next */
       this.$nextTick(() => {
         this.video.muted = this.isMuted
       })
@@ -43,6 +44,7 @@ export default {
       this.video.muted = true
       this.isMuted = true
       this.$modal.show('youtube', {youtubeId: this.anime.youtubeId})
+      this.$ga.event('button', 'youtube', this.anime.title)
     }
   },
   data () {

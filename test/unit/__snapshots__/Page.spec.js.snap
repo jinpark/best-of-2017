@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page.vue matches snapshot 1`] = `
+<swiper-slide>
+    <div class="overlay"></div>
+    <video src="/static/asilentvoice.mp4" poster="/static/asilentvoice.jpg" preload="" muted="muted" loop="loop" playsinline="" class="bg-video"></video>
+    <div class="video-info">
+        <h1 class="title">A Silent Voice (Film)</h1>
+        <h3 class="japanese-title">聲の形</h3>
+        <p class="summary">
+            <b>Summary</b>: A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.</p>
+        <div class="info">
+            <p class="review">
+                <b>Review</b>: Everyone has regrets and everyone deals with them differently. What's the right way to redeem yourself?</p>
+            <button class="button is-text youtube">
+                <icon name="youtube-play" scale="1.5"></icon>
+            </button>
+            <!---->
+            <button class="button is-text unmute">
+                <icon name="volume-off" scale="1.5"></icon>
+            </button>
+        </div>
+    </div>
+</swiper-slide>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`End.vue matches snapshot 1`] = `
+<swiper-slide>
+    <div class="overlay"></div>
+    <video src="/static/ending.mp4" autoplay="autoplay" muted="muted" loop="loop" playsinline="" class="bg-video"></video>
+    <swiper options="[object Object]">
+        <swiper-slide>
+            <div class="video-info">
+                <h1 class="title">Honorable Mentions</h1>
+                <h3 class="japanese-title">Almost on the list but not quite!</h3>
+                <h3>Swipe or scroll left to continue</h3>
+            </div>
+        </swiper-slide>
+        <div class="honorable"></div>
+        <div class="honorable"></div>
+        <div slot="button-prev" class="swiper-button-prev"></div>
+        <div slot="button-next" class="swiper-button-next"></div>
+    </swiper>
+</swiper-slide>
+`;

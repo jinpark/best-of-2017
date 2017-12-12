@@ -2,7 +2,7 @@
   <swiper-slide>
       <div class="overlay"></div>
       <video class="bg-video" src="/static/ending.mp4" autoplay muted loop playsinline></video>
-      <swiper :options="swiperOption" ref="horizontalSwiper">
+      <swiper :options="horizontalSwiperOption" ref="horizontalSwiper">
         <!-- slides -->
         <swiper-slide>
           <div class="video-info">
@@ -11,6 +11,7 @@
             <h3>Swipe or scroll left to continue</h3>
           </div>
         </swiper-slide>
+        <!-- honorable slides -->
         <Honorable v-for="anime in animes" :key="anime.title" v-bind:anime="anime"></Honorable>
         <!-- Optional controls -->
         <div class="swiper-button-prev" slot="button-prev"></div>
@@ -28,9 +29,24 @@ export default {
   components: {
     Honorable
   },
+  computed: {
+    horizontalSwiper () {
+      return this.$refs.horizontalSwiper.swiper
+    }
+  },
+  mounted () {
+    this.setAnalytics()
+  },
+  methods: {
+    setAnalytics () {
+      this.horizontalSwiper.on('slideChange', () => {
+        this.$ga.event('slide', 'change', 'honorable', this.horizontalSwiper.activeIndex)
+      })
+    }
+  },
   data () {
     return {
-      swiperOption: {
+      horizontalSwiperOption: {
         direction: 'horizontal',
         navigation: {
           nextEl: '.swiper-button-next',
@@ -48,78 +64,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-h1, h2 {
-  font-weight: normal;
-}
-a {
-  color: #42b983;
-}
-
 .swiper-button-next {
   right: 30px;
-}
-
-video.bg-video {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  object-fit: cover;
-}
-
-.overlay {
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC);
-}
-
-.video-info {
-  width: 85vw;
-  max-height: 90vh;
-  overflow: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  color: #ffffff;
-}
-
-.title {
-  color: #fff;
-  margin-bottom: 0;
-}
-
-ul {
-  columns: auto 2;
-  text-align: left;
-  margin: auto;
-  max-width: 85%;
-}
-
-li.cute::before {
-  content: "🐰 ";
-}
-
-li.action::before {
-  content: "💥 ";
-}
-
-li.drama::before {
-  content: "🎭 ";
-}
-
-li.comedy::before {
-  content: "😂 ";
 }
 
 .swiper-container {
