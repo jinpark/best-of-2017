@@ -44,6 +44,28 @@ export default {
           entry.target.classList.add('pointer')
         }
       })
+    },
+    setVideoController () {
+      this.swiper.on('slideChange', () => {
+        this.$ga.event('slide', 'change', 'normal', this.swiper.activeIndex)
+        // pause and play video on slide change
+        var activeSlide = this.swiper.slides[this.swiper.activeIndex]
+        var previousSlide = this.swiper.slides[this.swiper.previousIndex]
+        if (activeSlide.getElementsByTagName('video').length > 0) {
+          activeSlide.getElementsByTagName('video')[0].play()
+        }
+        if (previousSlide.getElementsByTagName('video').length > 0) {
+          previousSlide.getElementsByTagName('video')[0].pause()
+          previousSlide.getElementsByTagName('video')[0].muted = true
+        }
+      })
+    },
+    setObserver () {
+      const observer = new window.IntersectionObserver(this.enableScrollEvent, {
+        root: null,
+        threshold: [0.99]
+      })
+      observer.observe(document.getElementsByClassName('swiper-container')[0])
     }
   },
   computed: {
@@ -52,24 +74,8 @@ export default {
     }
   },
   mounted () {
-    this.swiper.on('slideChange', () => {
-      this.$ga.event('slide', 'change', 'normal', this.swiper.activeIndex)
-      // pause and play video on slide change
-      var activeSlide = this.swiper.slides[this.swiper.activeIndex]
-      var previousSlide = this.swiper.slides[this.swiper.previousIndex]
-      if (activeSlide.getElementsByTagName('video').length > 0) {
-        activeSlide.getElementsByTagName('video')[0].play()
-      }
-      if (previousSlide.getElementsByTagName('video').length > 0) {
-        previousSlide.getElementsByTagName('video')[0].pause()
-        previousSlide.getElementsByTagName('video')[0].muted = true
-      }
-    })
-    const observer = new IntersectionObserver(this.enableScrollEvent, {
-      root: null,
-      threshold: [0.99]
-    })
-    observer.observe(document.getElementsByClassName('swiper-container')[0])
+    this.setVideoController()
+    // this.setObserver()
   },
   data () {
     return {

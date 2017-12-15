@@ -12,6 +12,10 @@
 </template>
 
 <script>
+import fullscreen from 'vue-fullscreen'
+import Vue from 'vue'
+Vue.use(fullscreen)
+
 export default {
   name: 'Intro',
   methods: {
@@ -23,7 +27,8 @@ export default {
   },
   computed: {
     ios () {
-      return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
+      // dumb ios check (ios doesnt have full screen api)
+      return /iPad|iPhone|iPod/.test(window.navigator.userAgent) && !window.MSStream
     }
   }
 }

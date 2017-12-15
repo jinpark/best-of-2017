@@ -22,14 +22,13 @@ describe('End.vue', () => {
       "youtubeId": "nfK6UgLra7g"
     }
   ]
-  const horizontalSwiper = {
-    on: jest.fn(),
-    activeIndex: 1
+
+  const $ga = {
+    event: jest.fn()
   }
 
   beforeEach(() => {
-    wrapper = shallow(End, {stubs: {Honorable: '<div class="honorable" />'}})
-    wrapper.setComputed({horizontalSwiper})
+    wrapper = shallow(End, {methods: {setAnalytics: jest.fn()}, stubs: {Honorable: '<div class="honorable" />'}, mocks: {$ga}})
     wrapper.setMethods({setAnalytics: jest.fn()})
     wrapper.setData({animes})
   })
@@ -43,8 +42,19 @@ describe('End.vue', () => {
   })
 
   it('is has correct number of honorable slides', () => {
+    wrapper.vm.$refs = {horizontalSwiper: {swiper: 'thisisaswiper'}}
+    wrapper.update()
+    expect(wrapper.vm.horizontalSwiper).toBe('thisisaswiper')
+  })
+
+  it('returns horizontal swiper', () => {
     expect(wrapper.findAll('.honorable')).toHaveLength(animes.length)
   })
+
+  // it('sets google analytics', () => {
+  //   wrapper.vm.horizontalSwiper.on()
+  //   expect(wrapper.vm.$ga.event).toHaveBeenCalledWith('slide', 'change', 'honorable', 1)
+  // })
 
   it('matches snapshot', () => {
     const renderer = createRenderer()

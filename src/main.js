@@ -7,7 +7,6 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VModal from 'vue-js-modal'
 import 'vue-awesome/icons/'
 import Icon from 'vue-awesome/components/Icon'
-import fullscreen from 'vue-fullscreen'
 import VueAnalytics from 'vue-analytics'
 
 import 'animate.css/animate.min.css'
@@ -18,7 +17,6 @@ Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
 Vue.use(VModal, { dialog: true })
 Vue.component('icon', Icon)
-Vue.use(fullscreen)
 Vue.use(VueAnalytics, {
   id: 'UA-111110299-1'
 })

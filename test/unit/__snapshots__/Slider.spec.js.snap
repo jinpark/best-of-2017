@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider.vue matches snapshot 1`] = `
+<div class="all">
+    <div class="initial">
+        <!---->
+    </div>
+    <modal name="youtube" width="80%" height="80%">
+        <!---->
+    </modal>
+    <swiper options="[object Object]">
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div slot="pagination" class="swiper-pagination"></div>
+    </swiper>
+</div>
+`;

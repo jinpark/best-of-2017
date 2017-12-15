@@ -38,7 +38,9 @@ export default {
     this.setAnalytics()
   },
   methods: {
-    setAnalytics () {
+    // cant test mounted yet
+
+    setAnalytics /* istanbul ignore next */ () {
       this.horizontalSwiper.on('slideChange', () => {
         this.$ga.event('slide', 'change', 'honorable', this.horizontalSwiper.activeIndex)
       })
