@@ -42,6 +42,8 @@ export default {
       entries.forEach(entry => {
         if (entry.isIntersecting && entry.intersectionRatio > 0.99) {
           entry.target.classList.add('pointer')
+          // plays first slide
+          entry.target.getElementsByTagName('video')[0].play()
         }
       })
     },
@@ -65,6 +67,7 @@ export default {
         root: null,
         threshold: [0.99]
       })
+      // since the slider scrolljacks, we dont want it to scrolljack until the slide fills the page
       observer.observe(document.getElementsByClassName('swiper-container')[0])
     }
   },
@@ -75,7 +78,7 @@ export default {
   },
   mounted () {
     this.setVideoController()
-    // this.setObserver()
+    this.setObserver()
   },
   data () {
     return {
